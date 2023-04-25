@@ -196,7 +196,7 @@ public static void pattern2(int n){
      ***
       *
    
-   n = 5
+   n = 5 -- i/ p is odd always
    
    */
 
