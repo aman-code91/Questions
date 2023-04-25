@@ -189,8 +189,45 @@ public static void pattern2(int n){
         }
    }
 
+   /*
+      *
+     ***
+    *****
+     ***
+      *
+   
+   n = 5
+   
+   */
+
+  public static void pattern10(int n){
+        int star = 1;
+        int space = n/2;
+
+        for(int row = 0; row < n; row++){
+            for(int csp = 0 ; csp < space; csp++){
+                System.out.print(" ");
+            }
+            for(int cst = 0; cst < star; cst++){
+                System.out.print("*");
+            }
+
+            if(row < n/2){
+                star +=2 ;
+                space -= 1;
+            }
+            else{
+                star -= 2;
+                space += 1;
+            }
+            
+            System.out.println();
+        }
+   }
+
     public static void main(String [] args){
         // pattern1(5);
-        pattern9(4);
+        // pattern9(4);
+        pattern10(5);
     }
 }
