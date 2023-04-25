@@ -49,8 +49,64 @@ public static void pattern2(int n){
 
     }
 
+
+    public static void pattern4(int n){
+        int star = 1;
+        int val = 1;
+
+        for(int row = 0; row < n; row++){
+
+            for(int cst = 0; cst < star; cst++){
+                System.out.print(val);
+            }
+
+            System.out.println();
+            star++;
+
+        }
+
+    }
+
+    public static void pattern5(int n){
+        int star = 1;
+        int val = 1;
+
+        for(int row = 0; row < n; row++){
+
+            for(int cst = 0; cst < star; cst++){
+                System.out.print(val);
+            }
+
+            System.out.println();
+            star++;
+            val++;
+
+        }
+
+    }
+
+
+    public static void pattern6(int n){
+        int star = 1;
+        
+
+        for(int row = 0; row < n; row++){
+            int val = 1;
+            for(int cst = 0; cst < star; cst++){
+                System.out.print(val);
+                val++;
+            }
+
+            System.out.println();
+            star++;
+            
+
+        }
+
+    }
+
     public static void main(String [] args){
         // pattern1(5);
-        pattern3(5);
+        pattern6(5);
     }
 }
