@@ -138,8 +138,59 @@ public static void pattern2(int n){
 
     }
 
+    /*
+       *
+      ***
+     *****
+    *******
+    n = 4
+    */
+
+
+   public static void pattern8(int n){
+        int star = 1;
+        int space = n-1;
+
+        for(int row = 0; row < n; row++){
+            for(int csp = 0 ; csp < space; csp++){
+                System.out.print(" ");
+            }
+            for(int cst = 0; cst < star; cst++){
+                System.out.print("*");
+            }
+            star += 2;
+            space -= 1;
+            System.out.println();
+        }
+   }
+    /*
+    *******
+     *****
+      ***
+       *
+    n = 4
+    
+    */
+
+   public static void pattern9(int n){
+        int star = 2*n-1;
+        int space = 0;
+
+        for(int row = 0; row < n; row++){
+            for(int csp = 0 ; csp < space; csp++){
+                System.out.print(" ");
+            }
+            for(int cst = 0; cst < star; cst++){
+                System.out.print("*");
+            }
+            star -= 2;
+            space += 1;
+            System.out.println();
+        }
+   }
+
     public static void main(String [] args){
         // pattern1(5);
-        pattern7(5);
+        pattern9(4);
     }
 }
