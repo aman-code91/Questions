@@ -105,8 +105,41 @@ public static void pattern2(int n){
 
     }
 
+
+    /*
+    a
+    ab
+    abc
+    abcd
+    
+
+    1
+    12
+    123
+    1234
+    */
+
+    public static void pattern7(int n){
+        int star = 1;
+        
+
+        for(int row = 0; row < n; row++){
+            char val = 'a';
+            for(int cst = 0; cst < star; cst++){
+                System.out.print(val);
+                val++;
+            }
+
+            System.out.println();
+            star++;
+            
+
+        }
+
+    }
+
     public static void main(String [] args){
         // pattern1(5);
-        pattern6(5);
+        pattern7(5);
     }
 }
